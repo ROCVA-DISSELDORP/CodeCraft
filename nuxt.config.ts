@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+
   css: ['~/assets/css/main.css'],
 
   content: {
@@ -28,6 +29,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-07-11',
 
   nitro: {
+    preset: 'github-pages',
     prerender: {
       routes: [
         '/'
@@ -36,7 +38,7 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false
     }
   },
-
+  
   eslint: {
     config: {
       stylistic: {
@@ -48,6 +50,12 @@ export default defineNuxtConfig({
 
   icon: {
     provider: 'iconify'
+  },
+
+  router: {
+    options: {
+      hashMode: true
+    }
   },
 
   llms: {

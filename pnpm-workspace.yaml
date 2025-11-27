@@ -1,3 +1,6 @@
+packages:
+  - 'CodeCraft2/*'
+
 ignoredBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'
