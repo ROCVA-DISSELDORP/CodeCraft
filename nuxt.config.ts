@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-
   css: ['~/assets/css/main.css'],
 
   content: {
@@ -38,7 +37,7 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false
     }
   },
-  
+
   eslint: {
     config: {
       stylistic: {
