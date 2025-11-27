@@ -1,79 +1,62 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+/* eslint-disable nuxt/config-key-order */
 export default defineNuxtConfig({
+  // Modules must come first
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/content',
-    'nuxt-og-image',
-    'nuxt-llms'
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "@nuxt/ui",
+    "@nuxt/content",
+    "nuxt-og-image",
+    "nuxt-llms",
   ],
 
-  devtools: {
-    enabled: true
-  },
+  // Devtools next
+  devtools: { enabled: true },
 
-  css: ['~/assets/css/main.css'],
+  // CSS
+  css: ["~/assets/css/main.css"],
 
+  // Content module config
   content: {
     build: {
-      markdown: {
-        toc: {
-          searchDepth: 1
-        }
-      }
+      markdown: { toc: { searchDepth: 1 } }
     }
   },
 
-  compatibilityDate: '2024-07-11',
+  // Compatibility date
+  compatibilityDate: "2024-07-11",
 
+  // Nitro for GitHub Pages
   nitro: {
-    preset: 'github-pages',
+    preset: "github-pages",
     prerender: {
-      routes: [
-        '/'
-      ],
+      routes: ["/"],
       crawlLinks: true,
-      autoSubfolderIndex: false
-    }
+      autoSubfolderIndex: false,
+    },
   },
 
+  // App config with baseURL
+  app: {
+    baseURL: "/CodeCraft/",
+    buildAssetsDir: "assets",
+  },
+
+  // ESLint config
   eslint: {
     config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
-
-  icon: {
-    provider: 'iconify'
-  },
-
-  llms: {
-    domain: 'https://docs-template.nuxt.dev/',
-    title: 'Nuxt Docs Template',
-    description: 'A template for building documentation with Nuxt UI and Nuxt Content.',
-    full: {
-      title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.'
+      stylistic: { commaDangle: "never", braceStyle: "1tbs" },
     },
-    sections: [
-      {
-        title: 'Getting Started',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' }
-        ]
-      },
-      {
-        title: 'Essentials',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' }
-        ]
-      }
-    ]
-  }
+  },
+
+  // Icon provider
+  icon: { provider: "iconify" },
+
+  // LLMS module config
+  llms: {
+    domain: "https://docs-template.nuxt.dev/",
+    title: "Nuxt Docs Template",
+    description: "A template for building documentation with Nuxt UI en Nuxt Content.",
+  },
 })
+/* eslint-enable nuxt/config-key-order */
