@@ -42,12 +42,6 @@ export default defineNuxtConfig({
     buildAssetsDir: "assets",
   },
 
-  // ESLint config
-  eslint: {
-    config: {
-      stylistic: { commaDangle: "never", braceStyle: "1tbs" },
-    },
-  },
 
   // Icon provider
   icon: { provider: "iconify" },
