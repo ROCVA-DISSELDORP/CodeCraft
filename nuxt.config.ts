@@ -52,12 +52,6 @@ export default defineNuxtConfig({
     provider: 'iconify'
   },
 
-  router: {
-    options: {
-      hashMode: true
-    }
-  },
-
   llms: {
     domain: 'https://docs-template.nuxt.dev/',
     title: 'Nuxt Docs Template',
