@@ -1,0 +1,17 @@
+# Nuxt Docs Template
+
+> A template for building documentation with Nuxt UI en Nuxt Content.
+
+## Landing
+
+- [Nuxt Docs Template](https://docs-template.nuxt.dev): Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+
+## Docs
+
+- [Introduction](https://docs-template.nuxt.dev/getting-started): Welcome to Nuxt UI documentation template.
+- [Installation](https://docs-template.nuxt.dev/getting-started/installation): Get started with Nuxt UI documentation template.
+- [Usage](https://docs-template.nuxt.dev/getting-started/usage): Learn how to write and customize your documentation.
+- [Markdown Syntax](https://docs-template.nuxt.dev/essentials/markdown-syntax): Text, title, and styling in standard markdown.
+- [Code Blocks](https://docs-template.nuxt.dev/essentials/code-blocks): Display inline code and code blocks
+- [Prose Components](https://docs-template.nuxt.dev/essentials/prose-components): Components to help you structure your content.
+- [Images and Embeds](https://docs-template.nuxt.dev/essentials/images-embeds): Add image, video, and other HTML elements
